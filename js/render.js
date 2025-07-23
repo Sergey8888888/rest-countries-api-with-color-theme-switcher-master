@@ -4,11 +4,13 @@ const countries = document.querySelector(".countries");
 export function createCard(el, index) {
   return `
     <div class="box" data-index="${index}">
-      <img src="${el.flag}" alt="${el.name}">
-      <h3>${el.name}</h3>
-      <p>Population: ${el.population}</p>
-      <p>Region: ${el.region}</p>
-      <p>Capital: ${el.capital}</p>
+      <img src="${el.flags.png}" alt="${el.name}">
+      <div class='box-item'>
+      <h2>${el.name}</h2>
+      <p><strong>Population</strong>: ${el.population}</p>
+      <p><strong>Region</strong>: ${el.region}</p>
+      <p><strong>Capital</strong>: ${el.capital}</p>
+      </div>
     </div>
   `;
 }

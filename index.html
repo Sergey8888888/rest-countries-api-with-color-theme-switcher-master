@@ -31,31 +31,29 @@
         <i class="ri-moon-line"></i>Dark Mode
       </button>
     </header>
-<main>
-  <div class="search-container">
-    <div class="countryName-input">
-      <form class="form">
-        <i class="ri-search-line"></i>
-        <input
-          type="text"
-          placeholder="Search for a country..."
-        />
-      </form>
-      <select name="filter-input" id="filter-input">
-        <option value="all">Filter by Region</option>
-        <option value="africa">Africa</option>
-        <option value="americas">Americas</option>
-        <option value="asia">Asia</option>
-        <option value="europe">Europe</option>
-        <option value="oceania">Oceania</option>
-      </select>
-    </div>
-  </div>
+    <main>
+      <div class="search-container">
+        <div class="countryName-input">
+          <form class="form">
+            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Search for a country..." />
+          </form>
+          <div class="select-box">
+            <select name="filter-input" id="filter-input">
+              <option value="all">Filter by Region</option>
+              <option value="africa">Africa</option>
+              <option value="americas">Americas</option>
+              <option value="asia">Asia</option>
+              <option value="europe">Europe</option>
+              <option value="oceania">Oceania</option>
+            </select>
+          </div>
+        </div>
+      </div>
 
-  <div class="countries">
-  </div>
-<div id="country-detail-container" class="country-detail-container"></div>
-</main>
+      <div class="countries"></div>
+      <div id="country-detail-container" class="country-detail-container"></div>
+    </main>
 
     <script src="main.js" type="module"></script>
   </body>
